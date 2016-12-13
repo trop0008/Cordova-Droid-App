@@ -1,0 +1,188 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+/* color scheme complementary
+https://color.adobe.com/Gold-Sky-color-theme-392141/edit/?copy=true&base=0&rule=Complementary&selected=4&name=Copy%20of%20Gold%20Sky&mode=hsv&rgbvalues=0.0555342368080966,0.1590290699688904,0.26,0.06361220235590037,0.31486977965510216,0.56,0.81,0.906172669661546,1,1,0.7635306816796901,0.37,0.26,0.18325415929868047,0.0555342368080966&swatchOrder=0,1,2,3,4
+
+*/
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp|Roboto:400,700');
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+/*Page settings*/
+
+ 
+
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    /* ADD the Google sans-serif font to this font stack */
+    font-family: Roboto, Arial , Helvetica , sans-serif;
+}
+html, body{
+    background-color:  #CFE7FF;
+            color: #0E2942;
+}
+h1{
+    font-size: 5rem;
+
+   
+}
+h2{
+    font-size: 3.5rem;
+    text-align: center;
+    
+}
+nav li{
+    font-size: 1.5rem;
+}
+
+
+/*NAVIGATION*/
+.reload {
+    background: url(../img/reload.svg);
+    background-repeat: no-repeat;
+    background-color: #0E2942;
+    background-position: center center;
+    background-size: 50% 50%;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    
+    z-index: 30;
+}
+.reload:hover {
+    border: 2px solid  #FFC35E;
+}
+
+[data-role="nav"] {
+    position: fixed;
+    z-index: 30;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: #f9fafc;
+}
+
+.tabs {
+    list-style: none;
+}
+
+.tabs li {
+     vertical-align: middle;
+    float: left;
+    width: 50%;
+   
+    
+}
+
+.tabs a {
+    display: block;
+    width: 100%;
+   vertical-align: middle;
+    line-height: 4rem;
+    font-size: 1.5rem;
+    text-align: center;
+    
+    text-decoration: none;
+    border: 2px solid  #FFC35E;
+       background:  #0E2942;
+    color: #FFC35E ;
+    
+
+   
+}
+
+.tabs a:active ,
+.tabs a:hover {
+    
+    border: 5px solid  #FFC35E;
+    
+
+}
+
+
+/*END NAVIGATION*/
+
+/* Start 2 page display */
+/*pages are not displayed*/
+
+[data-role="page"] {
+    background-color:  #CFE7FF;
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 10;
+    padding-bottom: 5rem;
+    /* to match the height of the nav bar */
+    padding-top: 4rem;
+    /* leaving space for the heading */
+}
+
+[data-role="page"].active {
+    background-color:  #CFE7FF;
+    display: block;
+    z-index: 20;
+}
+
+/* End 2 page display */
+
+#teamStandings, .teamschedules {
+    border-collapse: collapse;
+    border: 1px solid #666;
+    width: 95%;
+    margin: 1rem auto;
+    
+}
+
+#teamStandings th,
+#teamStandings td  {
+    border: 1px solid #999;
+    text-align: center;
+    padding: 0.2rem 0.2rem;
+    line-height: 1.8rem;
+}
+.teamschedules th ,.teamschedules td {
+    border: 1px solid #999;
+    text-align: center;
+    padding: 0.15rem 0.15rem;
+    line-height: 1.8rem;
+}
+
+.teamschedules th{
+     background:  #422F0E;
+    color: #FFC35E ;
+}
+.teamschedules td{
+     
+    width:38%;
+}
+.svgimg{
+    width: 50px;
+    height: 50px;
+}
